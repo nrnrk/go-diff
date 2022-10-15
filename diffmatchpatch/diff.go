@@ -1,5 +1,5 @@
 // Copyright (c) 2012-2016 The go-diff authors. All rights reserved.
-// https://github.com/sergi/go-diff
+// https://github.com/nrnrk/go-diff
 // See the included LICENSE file for license details.
 //
 // go-diff is a Go implementation of Google's Diff, Match, and Patch library
@@ -449,7 +449,7 @@ func commonPrefixLength(text1, text2 []rune) int {
 // commonSuffixLength returns the length of the common suffix of two rune slices.
 func commonSuffixLength(text1, text2 []rune) int {
 	// Use linear search rather than the binary search discussed at https://neil.fraser.name/news/2007/10/09/.
-	// See discussion at https://github.com/sergi/go-diff/issues/54.
+	// See discussion at https://github.com/nrnrk/go-diff/issues/54.
 	i1 := len(text1)
 	i2 := len(text2)
 	for n := 0; ; n++ {
